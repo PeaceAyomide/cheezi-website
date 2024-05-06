@@ -1,0 +1,71 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 3rem;
+}
+
+.custom-video{
+    border: 2px solid white;
+    height: 26rem;
+    width: clamp(3rem, 39vw, 39rem);
+    border-radius: 9rem;
+    }
+  .custom-video::-webkit-media-controls-enclosure {
+    /* Hide default controls on webkit browsers (like Chrome, Safari) */
+    display: none !important;
+  }
+  
+  
+
+
+.heading {
+    font-size: clamp(1rem, 5vw, 3.25rem); /* Equivalent to text-4xl in Tailwind */
+    font-weight: 700;   /* Equivalent to font-bold in Tailwind */
+    color: white;       /* Equivalent to text-white in Tailwind */
+  }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+gap: 0.8rem;
+}
+.content p{
+    font-size: clamp(0.7rem, 2vw, 1rem);
+}
+
+.btn{
+    width: clamp(7rem, 9vw, 9rem);
+    border: 2px solid white;
+    height: 3rem;
+    border-radius: 2rem;
+    transition: .3s ease-in-out;
+    font-weight: 500;
+    font-size: clamp(0.7rem, 3vw, 1rem);
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+
+    .home{
+        flex-direction: column-reverse;
+    }
+
+    .custom-video{
+      
+        width: clamp(3rem, 90%, 39rem);
+      
+        }
+
+        
+.heading {
+    font-size: clamp(1rem, 6vw, 5rem); /* Equivalent to text-4xl in Tailwind */
+   }
+}
