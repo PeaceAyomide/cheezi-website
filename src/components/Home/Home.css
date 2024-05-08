@@ -4,6 +4,10 @@
     justify-content: center;
     align-items: center;
    gap: 3rem;
+   position: static;
+   z-index: -1;
+   background-color: black;
+
 }
 
 .custom-video{
@@ -11,11 +15,10 @@
     height: 26rem;
     width: clamp(3rem, 39vw, 39rem);
     border-radius: 9rem;
-    }
-  .custom-video::-webkit-media-controls-enclosure {
-    /* Hide default controls on webkit browsers (like Chrome, Safari) */
-    display: none !important;
-  }
+    overflow: hidden;
+
+}
+ 
   
   
 
@@ -55,12 +58,12 @@ gap: 0.8rem;
 @media (max-width: 700px) {
 
     .home{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .custom-video{
       
-        width: clamp(3rem, 90%, 39rem);
+        width: clamp(3rem, 73%, 39rem);
       
         }
 

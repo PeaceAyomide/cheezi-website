@@ -1,10 +1,10 @@
-import React, { useRef } from 'react'
+import React, {  useEffect, useRef } from 'react'
 import './Home.css'
 import  intro from '../Home/video.mp4'
 
 const Home = () => {
 
-
+  
     
   return (
       <section className='home'>
@@ -16,7 +16,7 @@ const Home = () => {
                 
               </div>            
           </div>
-          <video autoPlay controls className="custom-video"><source src={intro} type="video/mp4" />
+          <video autoPlay controls  muted className="custom-video"><source src={intro} type="video/mp4" />
             </video>
    </section>
   )

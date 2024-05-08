@@ -1,0 +1,66 @@
+
+.products{  
+}
+
+.products h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: #403d39;
+font-size: clamp(1rem, 7vw, 2.2rem);
+font-weight: 700;
+padding-bottom: 2.4rem;
+}
+
+.products-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 4rem;
+    
+}
+.products-box div{
+    height: 25rem;
+    width: 16rem;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+justify-content: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+.box p{
+    padding-top: 0.6rem;
+}
+
+
+.box button{
+    color: white;
+    background-color: black;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 2rem;
+transition: .3s ease-in-out;
+}
+
+.box button:hover{
+     background-color: white;
+     border: 1px solid black;
+     color: black;
+}
+
+.border{
+    overflow: hidden;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+border-radius: 14px;
+}
+
+.border img{
+    height: 340px;
+}
