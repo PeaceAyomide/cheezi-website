@@ -27,6 +27,8 @@ export default {
     },
     height: {
       sixty: '60px',
+      img: 'clamp(2.4rem, 2.9vh, 3.6rem)',
+     
       },
   
     fontWeight: {
@@ -40,7 +42,7 @@ export default {
     },
     fontSize: {
       "21px": "21px",
-      "16px": "16px",
+      "16px": "clamp(0.9rem, 2.9vh, 16px)",
       "1.2rem":"1.2rem"
     },
     margin: {

@@ -1,4 +1,6 @@
 import React, { useState, useEffect }  from 'react'
+import Logo from '../Navbar/Logo.png'
+
 
 const Navbar = () => {
 
@@ -38,20 +40,20 @@ const Navbar = () => {
       backgroundColor: isScrolled ? 'bg-black bg-opacity-95' : '' // Change background color when scrolled
     }}
     >
-      <span className='logo font-700 text-21px m-19px text-white'>CHEEZI</span>
+      <img src={Logo} className='h-img custom:m-19px ' alt="CHEEZI STUDIOS" />
       <div className="nav-items custom:hidden">
         <a href="#" className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>Home</a>
+        <a href="#"  className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>Product</a>
+        <a href="#"  className=' text-white no-underline relative opacity-0.9 text-16px m-29px transition duration-0.8s hover:text-aqua'>Portfolio</a>
         <a href="#"  className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>About</a>
-        <a href="#"  className=' text-white no-underline relative opacity-0.9 text-16px m-29px transition duration-0.8s hover:text-aqua'>Services</a>
-        <a href="#"  className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>Projects</a>
         <a href="#"  className=' text-white no-underline relative opacity-0.9 text-16px m-29px transition duration-0.8s hover:text-aqua'>ContactUs</a>
       
       </div>
 
       <div className={`nav-items2 hidden custom:flex fixed top-60px pt-3rem items-center gap-1rem text-1.2rem flex-col left-0 w-full h-full z-100  bg-black bg-opacity-95 transform -translate-x-full transition-all duration-500 ${isOpen ? 'transform translate-x-0' : '-translate-x-full'}`}>
         <a href="#" className=' transition duration-0.4s hover:text-aqua'>Home</a>
-        <a href="#"  className=' transition duration-0.4s hover:text-aqua'>Services</a>
-        <a href="#"  className=' transition duration-0.4s hover:text-aqua'>Projects</a>
+        <a href="#"  className=' transition duration-0.4s hover:text-aqua'>Product</a>
+        <a href="#"  className=' transition duration-0.4s hover:text-aqua'>Portfolio</a>
         <a href="#"  className=' transition duration-0.4s hover:text-aqua'>About</a>
         <a href="#"  className=' transition duration-0.4s hover:text-aqua'>Contact Us</a>
       
