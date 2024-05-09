@@ -21,13 +21,16 @@ padding-bottom: 2.4rem;
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 0 4rem;
+  
+}
+
+.portbox{
+    height: 25rem;
+    overflow: hidden;
 }
 .portbox img{
-    display: flex;
-    flex-direction: column;
-    height: 20rem;
+    height: 340px;
     width: 16rem;
-    
     border-radius: 1rem;
     cursor: pointer;
 transition: .3s ease-in-out;
