@@ -21,6 +21,31 @@ padding-bottom: 2.4rem;
     padding: 0 4rem;
     
 }
+
+.filter-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn button{
+    height: 2rem;
+    width: 6rem;
+    border-radius: 1rem;
+    background-color: black;
+    cursor: pointer;
+transition: .3s ease-in-out;
+}
+
+.filter-btn button:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
 .products-box div{
     height: 25rem;
     width: 16rem;
@@ -63,4 +88,9 @@ border-radius: 14px;
 
 .border img{
     height: 340px;
+}
+
+.active {
+    background-color: green; /* Change this to the color you want */
+    color: white; /* Change this to the color you want */
 }
