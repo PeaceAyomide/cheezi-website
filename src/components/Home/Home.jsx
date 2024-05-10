@@ -7,7 +7,7 @@ const Home = () => {
   
     
   return (
-      <section className='home'>
+      <section className='home' id="home">
           <div className="content">
               <h1 className='heading'>Welcome to Cheezi Studious</h1>
               <p>reach out to us for 3d animation</p>
