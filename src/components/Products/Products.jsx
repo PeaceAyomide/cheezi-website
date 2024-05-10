@@ -4,10 +4,11 @@ import './Products.css'
 const Products = () => {
 
     const [filter, setFilter] = useState("All");
-  
+    const [activeButton, setActiveButton] = useState(null);
    
-    const handleFilterChange = (value) => {
+    const handleFilterChange = (value, index) => {
         setFilter(value);
+        setActiveButton(index);
      
     };
 
@@ -19,9 +20,9 @@ const Products = () => {
             <div className="products">
                 <h1>PRODUCT</h1>
                 <div className="filter-btn">
-                    <button onClick={() => handleFilterChange("All")}>All</button>
-                    <button onClick={() => handleFilterChange("3D Models")} >3D Models</button>
-                    <button onClick={() => handleFilterChange("Tutorials")} > Tutorials </button>
+                    <button onClick={() => handleFilterChange("All", 0)}      className={filter === "All" ? '' : (activeButton === 0 ? 'active' : '')}>All</button>
+                    <button onClick={() => handleFilterChange("3D Models", 1)}  className={activeButton === 1 ? 'active' : ''}>3D Models</button>
+                    <button onClick={() => handleFilterChange("Tutorials", 2)}  className={activeButton === 2 ? 'active' : ''}> Tutorials </button>
                 </div>
                 <div className="products-box">
                 {filter === "All" || filter === "All" ? (
