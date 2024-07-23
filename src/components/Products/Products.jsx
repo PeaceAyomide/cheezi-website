@@ -3,7 +3,7 @@ import 'animate.css';
 
 const Products = () => {
   return (
-    <section class="pt-[4rem] px-[3%] pb-[12rem]  text-white" id="products">
+    <section class="pt-[10rem] px-[3%] pb-[12rem]  text-white" id="products">
       <div className='flex justify-center pb-[4rem]'>
         <h1 className='text-[1.8rem] font-[600] text-black'> Start here</h1>
       </div>

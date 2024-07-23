@@ -9,8 +9,12 @@ const Navbar = () => {
   
     useEffect(() => {
       const handleScroll = () => {
-        const isTop = window.scrollY > 50; // Change to check if scrolled more than 50px
-        setIsScrolled(isTop); // Set isScrolled based on the new condition
+        const isTop = window.scrollY < 0;
+        if (!isTop) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }  
       };
   
       window.addEventListener('scroll', handleScroll);
@@ -28,7 +32,7 @@ const Navbar = () => {
   return (
     <div className={`Navbar custom:gap-[7rem]  h-[6rem] flex justify-center items-center bg-black text-white  
     ${
-      isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : '' 
+      isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg h-[6rem]' : '' 
     }
     `}
     style={{
