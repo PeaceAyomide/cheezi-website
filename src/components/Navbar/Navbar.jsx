@@ -9,7 +9,7 @@ const Navbar = () => {
   
     useEffect(() => {
       const handleScroll = () => {
-        const isTop = window.scrollY > 0; // Change to check if scrolled more than 50px
+        const isTop = window.scrollY > 50; // Change to check if scrolled more than 50px
         setIsScrolled(isTop); // Set isScrolled based on the new condition
       };
   

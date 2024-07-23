@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 const Contact = () => {
   return (
-    <div>
+    <div id='contact'>
       <div className=" flex-col gap-6 pt-[3rem] px-[3%] pb-[8rem] bg-[rgb(22,22,22)] text-white flex justify-center">
         <p className='text-[1.4rem] font-[600] flex justify-center'>Lets Connect</p>
         <div className='flex justify-center gap-4'>

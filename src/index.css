@@ -6,7 +6,7 @@
 * {
     border: none;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     margin: 0;
     outline: none;
     padding: 0;
@@ -16,3 +16,10 @@
 ::-webkit-scrollbar {
     display: none; /* Hide scrollbar */
 }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }

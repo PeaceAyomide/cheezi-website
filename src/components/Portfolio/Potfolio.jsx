@@ -2,7 +2,7 @@ import React from 'react'
 
 const Potfolio = () => {
   return (
-    <section class="pt-[3rem] px-[3%] pb-[12rem]  text-white">
+    <section class="pt-[3rem] px-[3%] pb-[12rem]  text-white" id="portfolio">
      
     <div className='flex flex-row justify-center custom:items-center gap-7 custom:flex-col '>
         <div className='words w-[30rem] flex flex-col gap-3 ipad:w-[20rem] custom:text-center custom:justify-center custom:items-center'>
