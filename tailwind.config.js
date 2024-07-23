@@ -34,7 +34,9 @@ export default {
     fontWeight: {
       sevenhundred: '700',
     },
-    screens: {
+      screens: {
+        'ipad': {'max': '1200px'},
+   
       'custom': {'max': '700px'},
     },
     fontWeight: {

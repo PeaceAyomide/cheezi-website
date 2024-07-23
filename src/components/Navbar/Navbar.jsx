@@ -9,12 +9,8 @@ const Navbar = () => {
   
     useEffect(() => {
       const handleScroll = () => {
-        const isTop = window.scrollY < 0;
-        if (!isTop) {
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
+        const isTop = window.scrollY > 0; // Change to check if scrolled more than 50px
+        setIsScrolled(isTop); // Set isScrolled based on the new condition
       };
   
       window.addEventListener('scroll', handleScroll);
@@ -30,8 +26,8 @@ const Navbar = () => {
   
 
   return (
-    <div className={`Navbar h-sixty flex justify-between items-center bg-black text-white pr-nineteenrem pl-sixrem
-    custom:pl-0 custom:pr-0  ${
+    <div className={`Navbar custom:gap-[7rem]  h-[6rem] flex justify-center items-center bg-black text-white  
+    ${
       isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : '' 
     }
     `}
@@ -41,9 +37,9 @@ const Navbar = () => {
     }}
     >
       <img src={Logo} className='h-img custom:m-19px ' alt="CHEEZI STUDIOS" />
-      <div className="nav-items custom:hidden">
+      <div className="nav-items  custom:hidden flex pl-[20rem] ipad:pl-[6rem]">
         <a href="#home" className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>Home</a>
-        <a href="#products"  className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>Product</a>
+        <a href="#products"  className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>Shop</a>
         <a href="#portfolio"  className=' text-white no-underline relative opacity-0.9 text-16px m-29px transition duration-0.8s hover:text-aqua'>Portfolio</a>
         <a href="#contact"  className=' text-white no-underline relative opacity-0.9 text-16px m-29px transition duration-0.8s hover:text-aqua'>Contact</a>
       
@@ -51,7 +47,7 @@ const Navbar = () => {
 
       <div className={`nav-items2 hidden custom:flex fixed top-60px pt-3rem items-center gap-1rem text-1.2rem flex-col left-0 w-full h-full z-100  bg-black bg-opacity-95 transform -translate-x-full transition-all duration-500 ${isOpen ? 'transform translate-x-0' : '-translate-x-full'}`}>
         <a href="#home" className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Home</a>
-        <a href="#products"  className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Product</a>
+        <a href="#products"  className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Shop</a>
         <a href="#portfolio"  className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Portfolio</a>
         <a href="#contact"  className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Contact</a>
       

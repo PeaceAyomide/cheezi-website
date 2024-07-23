@@ -1,43 +1,27 @@
 import React from 'react'
-import './Contact.css'
+import { MdLocalPhone } from "react-icons/md";
+import { ImBehance } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
-
+import { FiMail } from "react-icons/fi";
 const Contact = () => {
   return (
-      <section id="contact" className='contact-begin'>
-          <div className="contact">
-              <h1>Contact Us</h1>
-              <div className="contact-box">
-                  <div className="icons">
-                      <div className="instagram">
-                          <FaInstagram/>
-                      </div>
-                      <div className="youtube">
-                          <FaYoutube/>
-                      </div>
-                      <div className="email">
-                          <MdOutlineEmail/>
-                      </div>
-                  </div>
-                  <div className="emailpage">
-                      <div className="name">
-                      <label htmlFor="FirstName">First Name</label>
-                      <input type="text"  placeholder='Enter Name'/>   
-                      </div>
-                      <div className="emaile">
-                          <label htmlFor="Email">Email</label>
-                          <input type="email"  placeholder='Enter Email'/>
-                      </div>
-                      <div className="message">
-                          <label htmlFor="Message">Message</label>
-                          <textarea name="message" id="Message" placeholder='Enter Message'></textarea>
-                      </div>
-                                  <button>Send</button>    </div>
-              </div>
-          </div>
-    </section>
+    <div>
+      <div className=" flex-col gap-6 pt-[3rem] px-[3%] pb-[8rem] bg-[rgb(22,22,22)] text-white flex justify-center">
+        <p className='text-[1.4rem] font-[600] flex justify-center'>Lets Connect</p>
+        <div className='flex justify-center gap-4'>
+          <div className='bg-white p-3 rounded-[2rem] transition duration-300 ease-in-out hover:scale-110 cursor-pointer'><MdLocalPhone className='text-black text-[1.5rem]' /></div>
+          
+          <div className='bg-white p-3 rounded-[2rem] transition duration-300 ease-in-out hover:scale-110 cursor-pointer'><ImBehance  className='text-black text-[1.5rem]' /></div>
+          
+          <div className='bg-white p-3 rounded-[2rem] transition duration-300 ease-in-out hover:scale-110 cursor-pointer'><FaInstagram className='text-black text-[1.5rem]' /></div>
+           
+          <div className='bg-white p-3 rounded-[2rem] transition duration-300 ease-in-out hover:scale-110 cursor-pointer'><FiMail className='text-black  text-[1.5rem]' /></div>
+           
+<div className='bg-white p-3 rounded-[2rem] text-black text-[1rem] font-[600] transition duration-300 ease-in-out hover:scale-110 cursor-pointer'>CV</div>
+        </div>
+      </div>
+      <div className=" flex-col  pt-[3rem] px-[3%] pb-[4rem] bg-[rgb(12,12,12)] text-white flex justify-center items-center text-[1.5rem]"> Faith Melodi </div>
+    </div>
   )
 }
 

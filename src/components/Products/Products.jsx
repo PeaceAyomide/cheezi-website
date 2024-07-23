@@ -1,103 +1,25 @@
-import React, { useState } from 'react'
-import './Products.css'
+import React from 'react'
+import 'animate.css';
 
 const Products = () => {
-
-    const [filter, setFilter] = useState("All");
-    const [activeButton, setActiveButton] = useState(null);
-   
-    const handleFilterChange = (value, index) => {
-        setFilter(value);
-        setActiveButton(index);
-     
-    };
-
-
-    
-
-    return (
-        <section id="products"> 
-            <div className="products">
-                <h1>PRODUCT</h1>
-                <div className="filter-btn">
-                    <button onClick={() => handleFilterChange("All", 0)}      className={filter === "All" ? '' : (activeButton === 0 ? 'active' : '')}>All</button>
-                    <button onClick={() => handleFilterChange("3D Models", 1)}  className={activeButton === 1 ? 'active' : ''}>3D Models</button>
-                    <button onClick={() => handleFilterChange("Tutorials", 2)}  className={activeButton === 2 ? 'active' : ''}> Tutorials </button>
-                </div>
-                <div className="products-box">
-                {filter === "All" || filter === "All" ? (
-                    <div className='box'><div className="border">
-                        <img src="https://plus.unsplash.com/premium_photo-1683887064255-1c428d0b3934?q=80&w=1486&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    </div>
-                        <p>3D Man</p>
-                        <small>$4000</small>
-                        <button>Buy</button>
-                    </div>
-                         ) : null}
-                    {filter === "All" || filter === "3D Models"  ? (
-                    <div className='box'><div className="border">
-                        <img src="https://plus.unsplash.com/premium_photo-1683887064106-531532ecdf20?q=80&w=1486&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    </div>
-                    <p>Bowl 3D</p>
-                        <small>$6000</small>
-                        <button>Buy</button>
-                    </div>
-                    ) : null}
-                    
-                    {filter === "All" || filter === "3D Models" ? (
-                    <div className='box'><div className="border">
-                    <img src="https://images.unsplash.com/photo-1641391503184-a2131018701b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    </div>
-                    <p>Barney 3D</p>
-                        <small>$7000</small>
-                        <button>Buy</button>
-                        </div>) : null}
-                    
-                        {filter === "All" || filter === "Tutorials" ? (
-                    <div className='box'><div className="border">
-                        <img src="https://images.unsplash.com/photo-1637511626493-bef85b22d1d5?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    </div>
-                    <p>Ball Motion</p>
-                        <small>$9000</small>
-                        <button>Buy</button>
-                        </div>) : null}
-                        {filter === "All" || filter === "Tutorials" ? (
-                    <div className='box'><div className="border">
-                        <img src="https://images.unsplash.com/photo-1635594202056-9ea3b497e5c0?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    </div>
-                    <p>4D Lady</p>
-                        <small>$4900</small>
-                        <button>Buy</button>
-                        </div>) : null}
-                        {filter === "All" || filter === "Tutorials" ? (
-                   
-                    <div className='box'><div className="border">
-                        <img src="https://images.unsplash.com/photo-1624628639856-100bf817fd35?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    </div>
-                    <p>Monalisa</p>
-                        <small>$4000</small>
-                        <button>Buy</button>
-                        </div>) : null}
-                        {filter === "All" || filter === "Tutorials" ? (
-                   
-                    <div className='box'><div className="border">
-                        <img src="https://images.unsplash.com/photo-1642427749670-f20e2e76ed8c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    </div>
-                    <p>Cats and Dogs</p>
-                        <small>$8900</small>
-                        <button>Buy</button>
-                        </div>) : null}
-                        {filter === "All" || filter === "Tutorials" ? (
-                    <div className='box'><div className="border">
-                        <img src="https://images.unsplash.com/photo-1633294261565-04234dc78da5?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                    </div>
-                    <p>Big Man</p>
-                        <small>$4000</small>
-                        <button>Buy</button>
-                    </div> ) : null}
-                </div>
+  return (
+    <section class="pt-[4rem] px-[3%] pb-[12rem]  text-white">
+      <div className='flex justify-center pb-[4rem]'>
+        <h1 className='text-[1.8rem] font-[600] text-black'> Start here</h1>
       </div>
-  </section>
+    <div className='flex custom:flex-col flex-row-reverse justify-center custom:items-center  gap-7'>
+        <div className='words w-[30rem] flex flex-col gap-3 ipad:w-[20rem]  custom:items-center'>
+          <h2 className='text-[1.4rem] font-[600] text-black'>Want to work with us ?</h2>
+          <p className='flex flex-wrap text-black custom:text-center'>
+            Share your ideas, possibilities and get production cost
+    </p>
+    <button className=' bg-black w-[9rem] h-[3rem]  text-[1.3rem] transition duration-300 ease-in-out hover:scale-110 animate__animated animate__pulse animate__infinite'>Book a call</button>
+    </div>
+  <div className='box h-[15rem] w-[26rem] bg-black rounded-[1rem] ipad:w-[20rem] ipad:h-[13rem] custom:h-[10rem] custom:w-[18rem]'>
+
+  </div>
+</div>
+</section>
   )
 }
 

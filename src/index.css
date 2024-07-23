@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-section{
-    padding: 8rem 3% 12rem;
-    color: white;
-}
+
 * {
     border: none;
     box-sizing: border-box;
