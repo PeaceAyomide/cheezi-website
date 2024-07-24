@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <section class="pt-[12rem] custom:pt-[9rem] px-[3%] pb-[10rem] ipad:pb-[12rem] bg-black text-white" id="home">
+    <section class="pt-[8rem]  px-[3%] pb-[12rem]  bg-black text-white" id="home">
       <div className='flex flex-row-reverse custom:flex-col  justify-center items-center gap-7'>
         <div className='words w-[30rem] ipad:w-[20rem] flex flex-col gap-2'>
           <p className='flex flex-wrap custom:text-center'>

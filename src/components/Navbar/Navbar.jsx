@@ -4,41 +4,31 @@ import Logo from '../Navbar/Logo.png'
 
 const Navbar = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        const isTop = window.scrollY < 0;
-        if (!isTop) {
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }  
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
     
-    const closeNavbar = () => {
-      setIsOpen(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 0);
     };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
   
 
   return (
-    <div className={`Navbar custom:gap-[7rem]  h-[6rem] flex justify-center items-center bg-black text-white  
-    ${
-      isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg h-[6rem]' : '' 
-    }
-    `}
-    style={{
-      transition: 'background-color 0.3s ease', // Add transition for smooth color change
-      backgroundColor: isScrolled ? 'bg-black bg-opacity-95' : '' // Change background color when scrolled
-    }}
+    <div className={`Navbar custom:gap-[7rem]  h-[6rem] flex justify-center items-center bg-black text-white  ${isSticky ? 'sticky top-0 z-50' : ''}`
+}  
+   
     >
       <img src={Logo} className='h-img custom:m-19px ' alt="CHEEZI STUDIOS" />
       <div className="nav-items  custom:hidden flex pl-[20rem] ipad:pl-[6rem]">
