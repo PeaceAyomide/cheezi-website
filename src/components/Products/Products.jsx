@@ -14,7 +14,7 @@ const Products = () => {
           <p className='flex flex-wrap text-black custom:text-center'>
             Share your ideas, possibilities and get production cost
     </p>
-    <button className=' bg-black w-[9rem] h-[3rem]  text-[1.3rem] transition duration-300 ease-in-out hover:scale-110 animate__animated animate__pulse animate__infinite'>Book a call</button>
+    <button onClick={() => window.open('https://cheezistudios.youcanbook.me/')} className=' bg-black w-[9rem] h-[3rem]  text-[1.3rem] transition duration-300 ease-in-out hover:scale-110 animate__animated animate__pulse animate__infinite'>Book a call</button>
     </div>
   <div className='box h-[15rem] w-[26rem] bg-black rounded-[1rem] ipad:w-[20rem] ipad:h-[13rem] custom:h-[10rem] custom:w-[18rem] overflow-hidden'>
 <img src={computer} alt="" />

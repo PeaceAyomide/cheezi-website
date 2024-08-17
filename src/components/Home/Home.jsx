@@ -1,5 +1,6 @@
 import React from 'react'
 import bghome from '../Home/bghome.jpg'
+import video from '../Home/video.mp4'
 
 const Home = () => {
 
@@ -14,7 +15,7 @@ const Home = () => {
     <section class="pt-[8rem]  px-[3%] pb-[12rem]  bg-black text-white" id="home" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bghome})`,
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
+    backgroundAttachment: 'scroll',
     backgroundSize: 'cover'}}>
       <div className='flex flex-row-reverse custom:flex-col  justify-center items-center gap-7'>
         <div className='words w-[30rem] ipad:w-[20rem] flex flex-col gap-2'>
@@ -26,8 +27,12 @@ Explore our portfolio and discover the magic of animation with Cheezi Studios.
           </p>
         
           </div>
-        <div className='box custom:h-[10rem] custom:w-[18rem] h-[15rem] w-[26rem] ipad:w-[20rem] ipad:h-[13rem] bg-white rounded-[1rem]'>
-
+        <div className='box custom:h-[10rem] custom:w-[18rem] h-[15rem] w-[26rem] overflow-hidden ipad:w-[20rem] ipad:h-[13rem] bg-inherit rounded-[1rem]'>
+<video    src={video} 
+            controls 
+            autoPlay 
+            className="w-full h-full object-cover" 
+            muted />
         </div>
       </div>
       <div className='flex justify-center pl-[43rem] ipad:pl-[20rem] custom:pl-0 custom:pt-8'>
