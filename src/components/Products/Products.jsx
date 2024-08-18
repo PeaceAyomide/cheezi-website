@@ -1,10 +1,15 @@
 import React from 'react'
 import 'animate.css';
 import computer from '../Products/computer.jpg'
+import bg2 from '../Products/bg2.jpg'
 
 const Products = () => {
   return (
-    <section class="pt-[8rem] px-[3%] pb-[8rem]  text-white" id="products">
+    <section class="pt-[8rem] px-[3%] pb-[8rem]  text-white" id="products" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bg2})`,
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'scroll',
+    backgroundSize: 'cover'}}>
       <div className='flex justify-center pb-[4rem]'>
         <h1 className='text-[1.8rem] font-[600] text-black'> Start here</h1>
       </div>
