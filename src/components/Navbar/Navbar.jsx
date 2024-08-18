@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="nav-items  custom:hidden flex pl-[20rem] ipad:pl-[6rem]">
         <a href="#" className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>Home</a>
         <a href="https://www.behance.net/faithmelodi"  className=' text-white no-underline relative opacity-0.9  text-16px m-29px transition duration-0.8s hover:text-aqua'>Portfolio</a>
-        <a href="#products"  className=' text-white no-underline relative opacity-0.9 text-16px m-29px transition duration-0.8s hover:text-aqua'>Academy</a>
+        <a href="#portfolio"  className=' text-white no-underline relative opacity-0.9 text-16px m-29px transition duration-0.8s hover:text-aqua'>Academy</a>
         <a href="#contact"  className=' text-white no-underline relative opacity-0.9 text-16px m-29px transition duration-0.8s hover:text-aqua'>Contact</a>
       
       </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className={`nav-items2 hidden custom:flex fixed top-60px pt-3rem items-center gap-1rem text-1.2rem flex-col left-0 w-full h-full z-100  bg-black bg-opacity-95 transform -translate-x-full transition-all duration-500 ${isOpen ? 'transform translate-x-0' : '-translate-x-full'}`}>
         <a href="#home" className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Home</a>
         <a href="https://www.behance.net/faithmelodi"  className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Portfolio</a>
-        <a href="#products"  className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Academy</a>
+        <a href="#portfolio"  className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Academy</a>
         <a href="#contact"  className=' transition duration-0.4s hover:text-aqua' onClick={closeNavbar}>Contact</a>
       
       </div>
